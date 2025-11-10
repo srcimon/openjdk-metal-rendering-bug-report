@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 
 public class DemoApp extends Canvas {
     public static void main(String[] args) {
+        //CHANGE TO sun.java2d.opengl to workaround bug
         System.setProperty("sun.java2d.metal", "true");
         BufferedImage spriteImage = createTestSprite(32, 32);
 
